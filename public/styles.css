@@ -1,0 +1,189 @@
+/* Defining gloabl fonts */
+@font-face {
+    font-family: "mainLight";
+    src: url("./assets/fonts/TTCommons-Light.ttf");
+}
+
+@font-face {
+    font-family: "mainMedium";
+    src: url("./assets/fonts/TTCommons-Medium.ttf");
+}
+
+@font-face {
+    font-family: "mainBold";
+    src: url("./assets/fonts/TTCommons-ExtraBold.ttf");
+}
+
+
+body {
+    font-family: "mainMedium";
+    background-color: #eff; 
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#title-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-title {
+    color: black;
+    font-family: "mainMedium";
+    font-size: 40px;
+    margin: 40px;
+}
+
+#main-container {
+    flex: 1;
+    min-height: 680px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #7d7d82;
+    margin: 100px;
+    min-width: 400px;
+    flex-basis: 0;
+}
+
+#inputs-container {
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#compute {
+    border-radius: 100px;
+    background-color: #5faab0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 160px;
+    padding-top: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#compute-title {
+    font-family: "mainMedium";
+    font-size: 18px;
+    color: white;
+    transition: all ease-in-out 0.2s;
+}
+
+#compute:hover {
+    letter-spacing: 2px;
+    background-color: #5faab0;
+}
+
+#row {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+
+#input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-label {
+    color: #7d7d82;
+    text-align: left;
+    font-size: 16px;
+    font-family: "mainLight";
+    margin-bottom: 4px;
+}
+
+.inputable {
+    border: none;
+    outline-width: 0;
+    width: 160px;
+    height: 34px;
+    border-radius: 25px;
+    border: solid 2px #ebebeb;
+    padding: 6px;
+    font-family: "mainLight";
+    font-size: 18px;
+    padding-left: 16px;
+    transition: all ease-in-out 0.2s;
+}
+
+.inputable:focus {
+    border: solid 2px #5faab0;
+}
+
+#deductible {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+#actors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.actor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.actor-text {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#actorName {
+    font-family: "mainBold";
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-right: 40px;
+}
+
+#actorType {
+    font-size: 20px;
+    font-family: "mainLight";
+}
+
+#actorAmount {
+    font-size: 20px;
+}
+
+input::-webkit-clear-button {
+    display: none;
+}
+
+
+@media only screen and (max-width: 700px){
+    #main-title {
+        font-size: 30px;
+    }
+    .inputable {
+        width: 100px;
+        height: 28px;
+    }
+}

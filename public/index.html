@@ -2,22 +2,71 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with govirtuo.com</title>
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div id="car">
-      <input class="js-name" type="text" placeholder="Car name"/>
-      <input class="js-price-by-day" type="number" placeholder="Price by day"/>
-      <input class="js-price-by-km" type="number" placeholder="Price by km"/>
+    <div id="main-container">
+      <div id="title-container">
+          <h2 id="main-title">Compute the cash flows</h2>
+      </div>
+      <div id="inputs-container">
+            <div id="row">
+              <div id="input-wrapper">
+                  <label class="input-label" for="js-name">Car name</label>
+                  <input id="js-carName" class="inputable" type="text" />
+              </div>
+              <div id="input-wrapper">
+                  <label class="input-label" for="js-price-by-day">Price by day</label>
+                  <input id="js-priceDay" class="inputable" type="number" />
+              </div>
+            </div>
+            <div id="row">
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-price-by-km">Price by km</label>
+                    <input id ="js-priceKm" class="inputable" type="number"/>
+                </div>
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-name">Driver name</label>
+                    <input id="js-driverName" class="inputable" type="text" />
+                </div>
+            </div>
+            <div id="row">
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-begin">Rental begin date</label>
+                    <input id="js-beginDate" class="inputable" type="date" />
+                </div>
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-end">Rental end date</label>
+                    <input id="js-endDate" class="inputable" type="date" />
+                </div>
+            </div>
+            <div id="row">
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-distance">Distance in km</label>
+                    <input id="js-distance" class="inputable" type="number" />
+                </div>
+                <div id="input-wrapper">
+                    <label class="input-label" for="js-option">Deductible option</label>
+                    <input id="js-option" type="checkbox" />
+                </div>
+            </div>
+          <div id="row" class="center">
+              <div id="compute">
+                <p id="compute-title">
+                  Compute
+                </p>
+              </div>
+          </div>
+      </div>
     </div>
-    <div id="rental">
-      <input class="js-name" type="text" placeholder="Driver name"/>
-      <input class="js-begin" type="date" placeholder="Rental begin date"/>
-      <input class="js-end" type="date" placeholder="Rental end date"/>
-      <input class="js-distance" type="number" placeholder="Distance in km"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+    <div id="main-container">
+      <div id="title-container">
+          <h2 id="main-title">Results</h2>
+      </div>
+      <div id="actors">
+
+      </div>
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
     <script src="virtuo.js"></script>
     <script src="index.js"></script>
   </body>
